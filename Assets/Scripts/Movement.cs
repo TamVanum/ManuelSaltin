@@ -34,7 +34,7 @@ public class Movement : MonoBehaviour
 
         if (characterController.isGrounded) lastGroundedTime = Time.time;
 
-        if (Input.GetButtonDown("Jump")) jumpButtonPressedTime = Time.time;
+        if (Input.GetButton("Jump")) jumpButtonPressedTime = Time.time;
 
     
         if (Time.time - lastGroundedTime <= jumpButtonGracePeriod) {
